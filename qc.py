@@ -97,8 +97,8 @@ def findProblematicWords(wordCount):
                 wordCats[word].append(wordCount[cat][word])
             else:
                 wordCats[word].append(0)
-        wordCats[word] = list(map(lambda c: c // 4, filter(lambda c: c >= 5, wordCats[word])))
-        if len(wordCats[word]) - len(set(wordCats[word])) >= 2:
+        wordCats[word] = list(map(lambda c: c // 15, filter(lambda c: c >= 3, wordCats[word])))
+        if len(wordCats[word]) - len(set(wordCats[word])) >= 4:
             print(word)
             input()
 
