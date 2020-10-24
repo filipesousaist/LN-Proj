@@ -2,22 +2,20 @@ import nltk
 import re
 from const import COARSE_CATEGORIES, FINE_CATEGORIES
 
-def getCategoriesAndQuestions(lines):
-    categories = []
+def getLabelsAndQuestions(lines):
+    labels = []
     questions = []
     for line in lines:
         tokens = line.split(" ")
-        categories.append(tokens[0])
+        labels.append(tokens[0])
         questions.append(" ".join(tokens[1:]))
     
-    return (categories, questions)
+    return (labels, questions)
 
-def getAllWords(wordDicts, mode):
+def getAllWords(wordDicts):
     wordSet = set()
-
-    for cat in (COARSE_CATEGORIES if mode == '-coarse' else FINE_CATEGORIES):
-        for word in wordDicts[cat]:
-            wordSet.add(word)
+    for word in wordDicts:
+        wordSet.add(word)
     return wordSet
 
 def removeSuffixes(question):

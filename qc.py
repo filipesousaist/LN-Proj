@@ -2,66 +2,111 @@ from sys import argv
 from utils import *
 from const import *
 from count import *
-from other import getCategoriesAndQuestions, processSentence
+from other import getLabelsAndQuestions, processSentence, getAllWords
 from debug import findProblematicWords
 import numpy as np
 import re
 import nltk
 
-option, trainFilename, questionsFilename = argv[1:4]
+from sklearn.svm import LinearSVC
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.datasets import make_classification
+from sklearn.feature_extraction import DictVectorizer
 
-def preProccess(mode):
+mode, trainFilename, questionsFilename = argv[1:4]
+
+def preProccess():
     trainFile = open(trainFilename, "r")
     lines = trainFile.readlines()
     trainFile.close()
 
-    categories, questions = getCategoriesAndQuestions(lines)
+    labels, questions = getLabelsAndQuestions(lines)
 
     newQuestions = [processSentence(q) for q in questions]
 
-    return (categories, newQuestions, mode)
+    getLabel = \
+        (lambda lbl: lbl.split(":")[0]) \
+        if mode == '-coarse' else \
+        (lambda lbl: lbl.rstrip("\n"))
+
+    newLabels = list(map(getLabel, labels))
+
+    return (newLabels, newQuestions)
 
 
-def calculateFrequencies(categories, questions, mode):
-    cats = COARSE_CATEGORIES if mode == '-coarse' else FINE_CATEGORIES
-    wordCount = {cat: {} for cat in cats}
-    totalCount = {cat: 0 for cat in cats}
+def calculateWordCounts(labels, questions):
+    numQuestions = len(questions)
 
-    for i in range(len(questions)):
-        cat = categories[i].split(":")[0] if mode == '-coarse' else categories[i].rstrip('\n')
-        tokens = nltk.word_tokenize(questions[i])
+    totalWordCount = {}
+    wordCount = []
 
-        totalCount[cat] += countNGrams(tokens, wordCount[cat])
-    
+    for i in range(numQuestions):
+        s = processSentence(questions[i])
+        tokens = nltk.word_tokenize(s)
+
+        currentWordCount = countNGrams(tokens)
+        wordCount.append(currentWordCount)
+        for word in currentWordCount:
+            if word in totalWordCount:
+                totalWordCount[word] += 1
+            else:
+                totalWordCount[word] = 1
+    """
+    toKeep = set()
+    for word in totalWordCount:
+        if totalWordCount[word] > 1:
+            toKeep.add(word)
+    for i in range(len(wordCount)):
+        newCount = {}
+        for word in wordCount[i]:
+            if word in toKeep:
+                newCount[word] = wordCount[i][word]
+        wordCount[i] = newCount
+    """
+
     #findProblematicWords(wordCount, mode)
         
     #print(wordCount)
     
-    return (wordCount, totalCount, mode)
+    return (labels, wordCount, getAllWords(totalWordCount))
+
+def learn(labels, wordCount, toKeep):
+    dv = DictVectorizer() 
+    X = dv.fit_transform(wordCount)
+    clf = LinearSVC(random_state=1, tol=0.01, max_iter=100000, verbose=False)
+    clf.fit(X, labels)
+
+    return (clf, toKeep, dv)
+#Pipeline(steps=[('standardscaler', StandardScaler()),
+#                ('linearsvc', LinearSVC(random_state=0, tol=1e-05))])
 
 
-def calculateSimilarities(wordCount, totalCount, mode):
+def predict(clf, toKeep, dv):
     questionsFile = open(questionsFilename, "r")
     sentences = questionsFile.readlines()
     questionsFile.close()
 
+    testWordCount = []
+
     for s in sentences:
         s = processSentence(s)
-        sWordCount = {} 
         tokens = nltk.word_tokenize(s)
 
-        countNGrams(tokens, sWordCount)
-        
-        cats, numCats = \
-            (COARSE_CATEGORIES, NUM_COARSE_CATS) \
-            if mode == '-coarse' else \
-            (FINE_CATEGORIES, NUM_FINE_CATS)
+        wordCount = countNGrams(tokens)
+        newWordCount = {}
+        for word in wordCount:
+            if word in toKeep:
+                newWordCount[word] = wordCount[word]
+        testWordCount.append(newWordCount)
+    
+    for word in toKeep:
+        if word not in testWordCount[0]:
+            testWordCount[0][word] = 0
 
-        sims = np.zeros(numCats)
-        for i in range(numCats):
-            for w in sWordCount:  
-                sims[i] += tfidf(w, cats[i], cats, wordCount, totalCount) * sWordCount[w]
-        
-        print(cats[np.argmax(sims)])
+    testX = dv.fit_transform(testWordCount)
 
-calculateSimilarities(*calculateFrequencies(*preProccess(option)))
+    for lbl in clf.predict(testX):
+        print(lbl)
+
+predict(*learn(*calculateWordCounts(*preProccess())))

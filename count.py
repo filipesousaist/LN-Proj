@@ -87,16 +87,17 @@ def countWord(word, occurrences):
     else:
         occurrences[word] = 1
 
-def countNGrams(tokens, wordCount):
-    totalCount = 0
+def countNGrams(tokens):
+    wordCount = {}
 
-    totalCount += countOccurrences(tokens, wordCount)
-    totalCount += countBigrams(tokens, wordCount)
-    totalCount += countBigrams(tokens, wordCount)
-    totalCount += countTrigrams(tokens, wordCount)
-    totalCount += countQuadrigrams(tokens, wordCount)
-    totalCount += countPentagrams(tokens, wordCount)
-    #totalCount += countHexagrams(tokens, wordCount)
-    totalCount += countStart(tokens, wordCount)
+    countOccurrences(tokens, wordCount)
+    #countOccurrences(tokens, wordCount)
+    countBigrams(tokens, wordCount)
+    #countBigrams(tokens, wordCount)
+    #countTrigrams(tokens, wordCount)
+    #countQuadrigrams(tokens, wordCount)
+    #countPentagrams(tokens, wordCount)
+    #countHexagrams(tokens, wordCount)
+    #countStart(tokens, wordCount)
 
-    return totalCount
+    return wordCount

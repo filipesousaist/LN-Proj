@@ -1,5 +1,6 @@
 from sys import argv
 from const import *
+import time
 
 devLabelsFilename, predictedLabelsFilename = argv[1:3]
 
