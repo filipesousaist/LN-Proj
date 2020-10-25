@@ -23,11 +23,11 @@ def evaluate(cats, getCat):
         catsOK[realCat] += result
         totalOK += result
         catsCount[realCat] += 1
-    """
+    
     for cat in cats:
         if catsCount[cat] > 0:
             print(cat.ljust(15) + ("%f%%" % ((catsOK[cat] / catsCount[cat]) * 100)).rjust(15))
-    """
+    
     print("Total: \t%f%%" % ((totalOK / numLabels) * 100))
 
 numLabels = len(devLabels)
