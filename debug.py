@@ -4,7 +4,7 @@ from const import COARSE_CATEGORIES, FINE_CATEGORIES
 def findProblematicWords(wordCount, mode):
     wordCats = {}
     cats = (COARSE_CATEGORIES if mode == '-coarse' else FINE_CATEGORIES)
-    for word in getAllWords(wordCount, mode):
+    for word in getAllWords(wordCount):
         wordCats[word] = []
         for cat in cats:
             if word in wordCount[cat]:

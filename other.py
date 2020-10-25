@@ -18,19 +18,39 @@ def getAllWords(wordDicts):
         wordSet.add(word)
     return wordSet
 
-def removeSuffixes(question):
+def removeSuffixes(question, mode):
     tokens = nltk.word_tokenize(question)
     for i in range(len(tokens)):
-        if tokens[i].endswith("ed"):
-            tokens[i] = tokens[i][:-2]
-        elif tokens[i].endswith("ing"):
-            tokens[i] = tokens[i][:-3]
-        elif len(tokens[i]) >= 3 and tokens[i].endswith("s") and not tokens[i].endswith("ss"):
-            tokens[i] = tokens[i][:-1]
+        tk = tokens[i]
+        l = len(tk)
+        if l >= 4 and tk.endswith("ed"):
+            if tk.endswith("sed"):
+                tokens[i] = tk[:-1]
+            else:
+                tokens[i] = tk[:-2]
+        elif mode == "-coarse" and l >= 5 and (
+            tk.endswith("ing") or 
+            tk.endswith("ity") or
+            tk.endswith("ism") or 
+            tk.endswith("ant") or 
+            tk.endswith("age") or 
+            tk.endswith("ery") ):
+            tokens[i] = tk[:-3]
+        #elif l >= 7 and (
+            #tk.endswith("tion") or 
+            #tk.endswith("ness") or 
+            #tk.endswith("ment") or 
+         #   tk.endswith("ship")):
+         #   tokens[i] = tk[:-4]
+        
+        elif l >= 3 and tk.endswith("s") and not tk.endswith("ss"):
+            tokens[i] = tk[:-1]
+
+        #-tion, -ity, -er, -ness, -ism, -ment, -ant, -ship, -age, -ery
     return " ".join(tokens)
 
 
-DELETE_CHARS = ":;!,@"
+DELETE_CHARS = ":?.;!,@"
 
 STOP_WORDS_FILE = open("STOP_WORDS.txt", "r")
 STOP_WORDS = STOP_WORDS_FILE.readlines()
@@ -40,13 +60,13 @@ STOP_WORDS_FILE.close()
 
 REGEXES = [re.compile(re.escape(word), re.IGNORECASE) for word in STOP_WORDS]
 
-def processSentence(s):
+def processSentence(s, mode):
     # Remove special characters
     for char in DELETE_CHARS:
         s = s.replace(char, '')
     
     # Remove suffixes
-    s = removeSuffixes(s)
+    s = removeSuffixes(s, mode)
 
     # Remove stop words
     lower = s.lower()

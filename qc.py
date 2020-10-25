@@ -23,16 +23,14 @@ def preProccess():
 
     labels, questions = getLabelsAndQuestions(lines)
 
-    newQuestions = [processSentence(q) for q in questions]
+    newQuestions = [processSentence(q, mode) for q in questions]
 
     getLabel = \
         (lambda lbl: lbl.split(":")[0]) \
         if mode == '-coarse' else \
         (lambda lbl: lbl.rstrip("\n"))
 
-    newLabels = list(map(getLabel, labels))
-
-    return (newLabels, newQuestions)
+    return (list(map(getLabel, labels)), newQuestions)
 
 
 def calculateWordCounts(labels, questions):
@@ -42,70 +40,51 @@ def calculateWordCounts(labels, questions):
     wordCount = []
 
     for i in range(numQuestions):
-        s = processSentence(questions[i])
-        tokens = nltk.word_tokenize(s)
+        tokens = nltk.word_tokenize(questions[i])
 
-        currentWordCount = countNGrams(tokens)
+        currentWordCount = countNGrams(tokens, mode)
         wordCount.append(currentWordCount)
         for word in currentWordCount:
             if word in totalWordCount:
                 totalWordCount[word] += 1
             else:
                 totalWordCount[word] = 1
-    """
-    toKeep = set()
-    for word in totalWordCount:
-        if totalWordCount[word] > 1:
-            toKeep.add(word)
-    for i in range(len(wordCount)):
-        newCount = {}
-        for word in wordCount[i]:
-            if word in toKeep:
-                newCount[word] = wordCount[i][word]
-        wordCount[i] = newCount
-    """
-
-    #findProblematicWords(wordCount, mode)
-        
-    #print(wordCount)
     
     return (labels, wordCount, getAllWords(totalWordCount))
 
-def learn(labels, wordCount, toKeep):
-    dv = DictVectorizer() 
-    X = dv.fit_transform(wordCount)
-    clf = LinearSVC(random_state=1, tol=0.01, max_iter=100000, verbose=False)
+def learn(labels, wordCount, knownWords): 
+    X = DictVectorizer().fit_transform(wordCount)
+    clf = LinearSVC(random_state=0, tol=1e-2, max_iter=100000)
     clf.fit(X, labels)
 
-    return (clf, toKeep, dv)
-#Pipeline(steps=[('standardscaler', StandardScaler()),
-#                ('linearsvc', LinearSVC(random_state=0, tol=1e-05))])
+    return (clf, knownWords)
 
-
-def predict(clf, toKeep, dv):
+def predict(clf, knownWords):
     questionsFile = open(questionsFilename, "r")
-    sentences = questionsFile.readlines()
+    questions = questionsFile.readlines()
     questionsFile.close()
 
+    # Count N-grams for each question in the test set
     testWordCount = []
 
-    for s in sentences:
-        s = processSentence(s)
-        tokens = nltk.word_tokenize(s)
+    for q in questions:
+        q = processSentence(q, mode)
+        tokens = nltk.word_tokenize(q)
 
-        wordCount = countNGrams(tokens)
+        wordCount = countNGrams(tokens, mode)
         newWordCount = {}
         for word in wordCount:
-            if word in toKeep:
+            if word in knownWords:
                 newWordCount[word] = wordCount[word]
         testWordCount.append(newWordCount)
     
-    for word in toKeep:
+    # Add missing features as "dummies" to the test set
+    for word in knownWords:
         if word not in testWordCount[0]:
             testWordCount[0][word] = 0
 
-    testX = dv.fit_transform(testWordCount)
-
+    # Test
+    testX = DictVectorizer().fit_transform(testWordCount)
     for lbl in clf.predict(testX):
         print(lbl)
 

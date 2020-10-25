@@ -1,951 +1,375 @@
-HUM:ind
-NUM:count
-LOC:country
-DESC:desc
-DESC:desc
-HUM:ind
-ABBR:exp
-LOC:city
-ENTY:cremat
-NUM:money
-HUM:ind
-DESC:def
-ENTY:food
-DESC:def
-DESC:desc
-HUM:ind
-LOC:other
-HUM:ind
-ENTY:animal
-DESC:def
-NUM:other
-LOC:other
-HUM:gr
-ENTY:other
-ENTY:techmeth
-DESC:manner
-NUM:date
-ENTY:other
-ENTY:other
-LOC:state
-NUM:money
-HUM:title
-HUM:ind
-NUM:period
-HUM:ind
-LOC:country
-NUM:count
-HUM:ind
-LOC:other
-NUM:weight
-HUM:gr
-HUM:ind
-DESC:def
-DESC:reason
-HUM:gr
-HUM:ind
-LOC:country
-ENTY:other
-DESC:def
-ENTY:animal
-DESC:def
-HUM:ind
-ENTY:dismed
-ENTY:food
-LOC:other
-ENTY:dismed
-ENTY:other
-ENTY:other
-LOC:city
-HUM:ind
-ENTY:dismed
-ENTY:other
-DESC:manner
-NUM:date
-LOC:other
-LOC:other
-ENTY:animal
-ENTY:veh
-DESC:reason
-DESC:manner
-LOC:other
-ENTY:food
-ENTY:food
-HUM:ind
-HUM:title
-HUM:desc
-NUM:count
-HUM:ind
-HUM:ind
-HUM:ind
-DESC:def
-ENTY:termeq
-NUM:other
-NUM:date
-DESC:def
-HUM:ind
-HUM:ind
-NUM:date
-HUM:gr
-ENTY:other
-HUM:ind
-NUM:count
-HUM:ind
-DESC:def
-HUM:ind
-ENTY:animal
-HUM:gr
-NUM:period
-ENTY:cremat
-ENTY:color
-LOC:other
-HUM:ind
-ENTY:food
-ABBR:abb
-ENTY:instru
-NUM:count
-NUM:count
-DESC:manner
-ENTY:other
-HUM:ind
-NUM:count
-NUM:count
-HUM:gr
-ABBR:abb
-ENTY:other
-ENTY:other
-ENTY:sport
-HUM:ind
-DESC:reason
-NUM:date
-ENTY:cremat
-ENTY:cremat
-HUM:ind
-HUM:ind
-DESC:manner
-DESC:def
-LOC:other
-HUM:ind
-HUM:ind
-DESC:def
-ENTY:food
-HUM:ind
-HUM:ind
-HUM:ind
-HUM:gr
-HUM:ind
-DESC:reason
-ENTY:event
-ABBR:exp
-NUM:period
-ENTY:event
-NUM:code
-NUM:other
-HUM:ind
-NUM:date
-DESC:reason
-ENTY:other
-HUM:ind
-HUM:ind
-NUM:money
-HUM:ind
-DESC:def
-HUM:ind
-ENTY:veh
-HUM:ind
-LOC:other
-DESC:desc
-NUM:other
-HUM:ind
-NUM:count
-NUM:money
-NUM:date
-HUM:ind
-HUM:ind
-NUM:count
-DESC:def
-ENTY:techmeth
-HUM:ind
-ENTY:substance
-DESC:desc
-DESC:def
-DESC:def
-DESC:reason
-HUM:title
-NUM:date
-ENTY:letter
-ENTY:dismed
-HUM:ind
-NUM:date
-NUM:count
-LOC:state
-ABBR:exp
-HUM:ind
-LOC:city
-LOC:other
-HUM:ind
-ENTY:other
-DESC:def
-NUM:dist
-DESC:def
-NUM:date
-ENTY:termeq
-ENTY:dismed
-NUM:count
-DESC:manner
-HUM:ind
-ENTY:other
-DESC:def
-HUM:ind
-NUM:period
-LOC:other
-DESC:manner
-ENTY:currency
-ENTY:event
-HUM:ind
-HUM:ind
-NUM:count
-DESC:reason
-DESC:def
-LOC:city
-DESC:reason
-HUM:ind
-DESC:def
-NUM:count
-NUM:date
-ENTY:techmeth
-LOC:city
-DESC:def
-ENTY:animal
-ENTY:food
-NUM:date
-DESC:manner
-DESC:reason
-ENTY:other
-HUM:desc
-ENTY:other
-HUM:ind
-DESC:manner
-ENTY:other
-DESC:desc
-HUM:ind
-LOC:state
-DESC:desc
-NUM:date
-DESC:def
-HUM:ind
-HUM:ind
-DESC:desc
-ENTY:word
-NUM:period
-NUM:date
-HUM:gr
-HUM:ind
-HUM:ind
-ENTY:other
-HUM:ind
-NUM:period
-LOC:other
-ENTY:cremat
-DESC:reason
-ABBR:exp
-ENTY:instru
-NUM:date
-HUM:ind
-HUM:ind
-ABBR:exp
-DESC:reason
-LOC:other
-ENTY:termeq
-HUM:ind
-DESC:manner
-ENTY:word
-DESC:reason
-LOC:city
-DESC:manner
-HUM:ind
-ABBR:exp
-DESC:def
-ENTY:termeq
-NUM:date
-ENTY:veh
-ENTY:termeq
-NUM:count
-HUM:ind
-ABBR:exp
-ENTY:product
-NUM:money
-HUM:ind
-ENTY:other
-ENTY:color
-LOC:state
-HUM:ind
-HUM:ind
-ENTY:other
-LOC:other
-ENTY:other
-NUM:count
-LOC:state
-LOC:other
-NUM:date
-NUM:count
-HUM:ind
-HUM:ind
-NUM:perc
-NUM:count
-NUM:other
-HUM:ind
-DESC:manner
-HUM:ind
-DESC:desc
-ENTY:dismed
-HUM:ind
-DESC:manner
-DESC:desc
-HUM:ind
-DESC:desc
-DESC:desc
-NUM:count
-ENTY:animal
-ENTY:other
-LOC:other
-DESC:def
-ENTY:product
-ENTY:termeq
-DESC:def
-DESC:def
-HUM:ind
-ENTY:food
-ENTY:veh
-NUM:period
-DESC:def
-HUM:ind
-LOC:other
-HUM:ind
-LOC:city
-DESC:def
-HUM:gr
-LOC:city
-LOC:other
-NUM:count
-ENTY:veh
-LOC:other
-DESC:def
-DESC:manner
-DESC:desc
-NUM:count
-DESC:def
-ENTY:other
-HUM:gr
-DESC:desc
-HUM:ind
-DESC:def
-HUM:ind
-NUM:count
-NUM:count
-NUM:count
-HUM:gr
-DESC:desc
-HUM:ind
-LOC:country
-ENTY:event
-HUM:ind
-ENTY:event
-DESC:desc
-DESC:def
-NUM:date
-DESC:def
-HUM:gr
-DESC:manner
-ENTY:substance
-ENTY:animal
-DESC:def
-NUM:other
-ENTY:animal
-LOC:other
-NUM:weight
-HUM:ind
-LOC:country
-ENTY:termeq
-NUM:count
-DESC:manner
-LOC:city
-LOC:mount
-ENTY:veh
-DESC:desc
-DESC:manner
-LOC:other
-DESC:def
-HUM:ind
-ENTY:food
-NUM:date
-LOC:other
-LOC:other
-DESC:desc
-ABBR:exp
-LOC:other
-ENTY:substance
-LOC:country
-ENTY:other
-LOC:other
-HUM:ind
-NUM:date
-DESC:def
-ENTY:food
-ENTY:dismed
-DESC:def
-HUM:ind
-ENTY:termeq
-LOC:other
-DESC:manner
-HUM:ind
-LOC:other
-NUM:date
-NUM:other
-DESC:desc
-HUM:ind
-DESC:def
-NUM:count
-DESC:desc
-HUM:ind
-NUM:date
-HUM:ind
-ENTY:color
-ENTY:food
-ABBR:exp
-LOC:other
-NUM:count
-HUM:desc
-HUM:ind
-NUM:count
-DESC:def
-ENTY:product
-NUM:date
-ENTY:other
-DESC:reason
-LOC:other
-ENTY:other
-DESC:def
-LOC:other
-NUM:dist
-HUM:gr
-HUM:title
-DESC:manner
-NUM:date
-NUM:dist
-LOC:state
-ENTY:animal
-HUM:ind
-HUM:ind
-LOC:country
-LOC:other
-ENTY:termeq
-ENTY:cremat
-DESC:manner
-DESC:def
-NUM:count
-HUM:ind
-LOC:city
-NUM:count
-HUM:ind
-ENTY:cremat
-ENTY:other
-ENTY:termeq
-DESC:manner
-ENTY:cremat
-HUM:gr
-LOC:other
-LOC:other
-LOC:state
-ENTY:food
-NUM:ord
-DESC:manner
-NUM:date
-HUM:ind
-HUM:gr
-ENTY:dismed
-DESC:def
-ENTY:animal
-DESC:def
-DESC:def
-LOC:other
-HUM:ind
-ENTY:other
-ABBR:exp
-NUM:other
-ABBR:exp
-ENTY:animal
-HUM:gr
-HUM:ind
-DESC:desc
-NUM:other
-LOC:city
-ENTY:lang
-LOC:city
-HUM:desc
-ENTY:veh
-ENTY:veh
-ABBR:exp
-HUM:desc
-ENTY:other
-ENTY:substance
-LOC:country
-NUM:count
-ENTY:dismed
-NUM:count
-NUM:date
-LOC:other
-NUM:dist
-LOC:other
-DESC:desc
-LOC:other
-LOC:city
-DESC:def
-ENTY:substance
-DESC:desc
-ENTY:other
-HUM:ind
-ENTY:termeq
-HUM:ind
-DESC:def
-DESC:def
-LOC:other
-ENTY:dismed
-ENTY:animal
-LOC:other
-DESC:reason
-HUM:ind
-HUM:gr
-HUM:gr
-ENTY:dismed
-NUM:count
-HUM:ind
-ENTY:other
-ENTY:other
-DESC:def
-DESC:def
-LOC:country
-LOC:other
-ENTY:sport
-ENTY:event
-DESC:def
-HUM:ind
-NUM:count
-HUM:ind
-LOC:other
-NUM:count
-DESC:manner
-NUM:count
-HUM:ind
-ENTY:event
-LOC:other
-ENTY:product
-ENTY:symbol
-DESC:reason
-NUM:dist
-DESC:def
-ENTY:substance
-DESC:def
-LOC:city
-DESC:reason
-ENTY:food
-DESC:def
-LOC:state
-ENTY:cremat
-ENTY:termeq
-NUM:period
-ENTY:product
-ENTY:cremat
-ENTY:cremat
-ENTY:other
-ENTY:food
-ENTY:techmeth
-DESC:reason
-ENTY:other
-DESC:def
-ENTY:dismed
-DESC:def
-HUM:ind
-LOC:country
-DESC:desc
-NUM:count
-HUM:ind
-LOC:country
-DESC:desc
-LOC:other
-HUM:desc
-LOC:state
-ENTY:techmeth
-NUM:count
-ENTY:other
-NUM:date
-ENTY:other
-NUM:dist
-HUM:ind
-LOC:other
-LOC:other
-ENTY:cremat
-DESC:manner
-DESC:def
-ENTY:termeq
-ENTY:sport
-ENTY:event
-LOC:other
-HUM:gr
-DESC:manner
-LOC:other
-NUM:count
-ENTY:dismed
-HUM:ind
-DESC:def
-NUM:perc
-ABBR:exp
-LOC:city
-HUM:ind
-NUM:other
-HUM:ind
-NUM:count
-ENTY:event
-LOC:country
-DESC:def
-DESC:def
-ENTY:product
-DESC:desc
-NUM:perc
-LOC:other
-HUM:gr
-NUM:count
-HUM:ind
-ENTY:other
-ENTY:food
-HUM:ind
-ENTY:animal
-NUM:period
-LOC:other
-ENTY:event
-ENTY:termeq
-HUM:ind
-ENTY:color
-DESC:manner
-NUM:date
-NUM:count
-NUM:count
-NUM:count
-LOC:other
-NUM:date
-ENTY:animal
-LOC:other
-LOC:other
-ENTY:food
-ENTY:food
-ENTY:word
-HUM:ind
-HUM:title
-HUM:ind
-HUM:ind
-DESC:def
-ENTY:termeq
-ENTY:sport
-LOC:other
-DESC:manner
-NUM:date
-HUM:ind
-HUM:title
-NUM:other
-LOC:mount
-NUM:money
-ENTY:currency
-HUM:ind
-HUM:ind
-DESC:reason
-NUM:volsize
-ENTY:other
-LOC:other
-ENTY:other
-HUM:ind
-LOC:other
-DESC:def
-DESC:manner
-HUM:gr
-ENTY:cremat
-DESC:def
-HUM:gr
-HUM:ind
-DESC:desc
-LOC:other
-ENTY:techmeth
-ENTY:other
-HUM:ind
-ENTY:cremat
-DESC:manner
-ENTY:animal
-ENTY:termeq
-DESC:reason
-NUM:money
-ENTY:other
-NUM:count
-LOC:state
-NUM:other
-ENTY:substance
-NUM:date
-DESC:reason
-ENTY:dismed
-NUM:count
-DESC:desc
-HUM:ind
-NUM:count
-DESC:desc
-ENTY:food
-ENTY:other
-ENTY:dismed
-ENTY:animal
-ENTY:animal
-LOC:other
-DESC:def
-HUM:ind
-DESC:reason
-ABBR:exp
-DESC:def
-NUM:perc
-ENTY:substance
-ENTY:substance
-ENTY:animal
-HUM:ind
-LOC:mount
-LOC:other
-DESC:def
-LOC:mount
-NUM:dist
-NUM:money
-ENTY:substance
-DESC:desc
-DESC:desc
-DESC:desc
-LOC:mount
-DESC:def
-DESC:manner
-ENTY:other
-LOC:other
-NUM:other
-ENTY:animal
-DESC:def
-HUM:ind
-ENTY:cremat
-LOC:state
-NUM:date
-DESC:manner
-LOC:mount
-ENTY:other
-NUM:count
-LOC:other
-ENTY:animal
-ENTY:dismed
-LOC:other
-DESC:def
-DESC:reason
-DESC:def
-HUM:ind
-LOC:mount
-LOC:country
-DESC:desc
-ENTY:techmeth
-LOC:city
-LOC:country
-NUM:perc
-ENTY:color
-ENTY:veh
-DESC:desc
-ENTY:techmeth
-HUM:ind
-ENTY:dismed
-DESC:def
-DESC:reason
-HUM:ind
-DESC:desc
-DESC:manner
-NUM:date
-LOC:other
-DESC:manner
-NUM:count
-ENTY:dismed
-HUM:ind
-DESC:desc
-ENTY:animal
-HUM:ind
-DESC:reason
-HUM:ind
-ENTY:plant
-ENTY:cremat
-HUM:gr
-HUM:gr
-LOC:city
-DESC:manner
-HUM:desc
-ABBR:exp
-ENTY:cremat
-DESC:manner
-ENTY:event
-LOC:state
-ENTY:other
-DESC:desc
-DESC:reason
-HUM:gr
-HUM:ind
-NUM:date
-DESC:manner
-ENTY:cremat
-NUM:date
-ENTY:event
-DESC:desc
-DESC:desc
-ENTY:termeq
-HUM:gr
-NUM:count
-ENTY:food
-HUM:gr
-ENTY:cremat
-NUM:count
-DESC:desc
-ENTY:other
-HUM:gr
-DESC:manner
-DESC:reason
-DESC:desc
-NUM:period
-NUM:period
-DESC:def
-DESC:def
-LOC:other
-ENTY:dismed
-DESC:desc
-DESC:def
-HUM:gr
-ENTY:cremat
-HUM:ind
-DESC:def
-HUM:ind
-ENTY:event
-ENTY:cremat
-DESC:def
-ABBR:exp
-NUM:count
-HUM:ind
-ENTY:termeq
-DESC:reason
-HUM:ind
-HUM:ind
-ENTY:techmeth
-DESC:def
-ENTY:plant
-HUM:ind
-HUM:gr
-ENTY:dismed
-DESC:def
-HUM:ind
-HUM:ind
-ENTY:veh
-DESC:def
-ENTY:food
-NUM:count
-LOC:state
-NUM:count
-HUM:ind
-DESC:manner
-DESC:def
-HUM:ind
-NUM:other
-LOC:other
-HUM:gr
-LOC:other
-ENTY:sport
-NUM:period
-NUM:count
-HUM:gr
-ENTY:event
-DESC:manner
-HUM:ind
-HUM:ind
-ENTY:other
-NUM:count
-HUM:ind
-LOC:other
-ENTY:other
-NUM:volsize
-DESC:reason
-HUM:gr
-DESC:desc
-ENTY:cremat
-ENTY:cremat
-DESC:def
-HUM:ind
-HUM:ind
-LOC:other
-HUM:ind
-NUM:volsize
-LOC:other
-HUM:gr
-DESC:desc
-HUM:ind
-LOC:city
-NUM:count
-LOC:other
-LOC:other
-NUM:date
-DESC:desc
-DESC:desc
-NUM:date
-HUM:ind
-ENTY:cremat
-HUM:ind
-HUM:ind
-DESC:desc
-NUM:count
-ENTY:animal
-DESC:reason
-NUM:count
-DESC:reason
-HUM:ind
-LOC:other
-HUM:ind
-ENTY:other
-DESC:def
-ENTY:food
-ENTY:other
-ENTY:substance
-ENTY:veh
-ENTY:other
-NUM:date
-NUM:date
-ENTY:other
-HUM:gr
-LOC:other
-LOC:country
-ENTY:cremat
-NUM:count
-LOC:mount
-LOC:other
-HUM:gr
-HUM:ind
-DESC:reason
-ENTY:word
-ENTY:food
-HUM:ind
-NUM:date
-ENTY:termeq
-NUM:count
-ENTY:other
-ENTY:other
-NUM:speed
-HUM:ind
-ENTY:lang
-ENTY:cremat
-DESC:def
-LOC:other
-DESC:manner
-DESC:def
-DESC:manner
-DESC:reason
-NUM:count
-NUM:date
-ENTY:cremat
-HUM:ind
+4 4 4
+Coarse: 86.330179%
+Fine: 81.493165%
+4 4 5
+Coarse: 86.014721%
+Fine: 81.598318%
+4 4 6
+Coarse: 86.014721%
+Fine: 81.388013%
+4 4 7
+Coarse: 85.909569%
+Fine: 81.388013%
+4 4 8
+Coarse: 85.909569%
+Fine: 81.388013%
+4 5 4
+Coarse: 85.804416%
+Fine: 80.231335%
+4 5 5
+Coarse: 85.699264%
+Fine: 80.126183%
+4 5 6
+Coarse: 85.699264%
+Fine: 80.126183%
+4 5 7
+Coarse: 85.699264%
+Fine: 80.021030%
+4 5 8
+Coarse: 85.699264%
+Fine: 79.915878%
+4 6 4
+Coarse: 85.383807%
+Fine: 79.495268%
+4 6 5
+Coarse: 85.383807%
+Fine: 79.600421%
+4 6 6
+Coarse: 85.278654%
+Fine: 79.600421%
+4 6 7
+Coarse: 85.278654%
+Fine: 79.600421%
+4 6 8
+Coarse: 85.278654%
+Fine: 79.600421%
+4 7 4
+Coarse: 85.068349%
+Fine: 78.969506%
+4 7 5
+Coarse: 84.963197%
+Fine: 78.969506%
+4 7 6
+Coarse: 84.963197%
+Fine: 78.969506%
+4 7 7
+Coarse: 85.068349%
+Fine: 78.969506%
+4 7 8
+Coarse: 84.963197%
+Fine: 78.969506%
+4 8 4
+Coarse: 84.858044%
+Fine: 78.233438%
+4 8 5
+Coarse: 84.858044%
+Fine: 78.233438%
+4 8 6
+Coarse: 84.858044%
+Fine: 78.233438%
+4 8 7
+Coarse: 84.752892%
+Fine: 78.233438%
+4 8 8
+Coarse: 84.752892%
+Fine: 78.233438%
+5 4 4
+Coarse: 86.225026%
+Fine: 81.913775%
+5 4 5
+Coarse: 86.225026%
+Fine: 81.913775%
+5 4 6
+Coarse: 86.119874%
+Fine: 81.913775%
+5 4 7
+Coarse: 86.014721%
+Fine: 81.808623%
+5 4 8
+Coarse: 86.014721%
+Fine: 81.808623%
+5 5 4
+Coarse: 86.014721%
+Fine: 81.493165%
+5 5 5
+Coarse: 85.909569%
+Fine: 81.493165%
+5 5 6
+Coarse: 85.699264%
+Fine: 81.388013%
+5 5 7
+Coarse: 85.699264%
+Fine: 81.493165%
+5 5 8
+Coarse: 85.699264%
+Fine: 81.388013%
+5 6 4
+Coarse: 85.804416%
+Fine: 80.546793%
+5 6 5
+Coarse: 85.804416%
+Fine: 80.441640%
+5 6 6
+Coarse: 85.699264%
+Fine: 80.441640%
+5 6 7
+Coarse: 85.699264%
+Fine: 80.336488%
+5 6 8
+Coarse: 85.699264%
+Fine: 80.231335%
+5 7 4
+Coarse: 85.383807%
+Fine: 79.810726%
+5 7 5
+Coarse: 85.383807%
+Fine: 79.810726%
+5 7 6
+Coarse: 85.383807%
+Fine: 79.705573%
+5 7 7
+Coarse: 85.383807%
+Fine: 79.705573%
+5 7 8
+Coarse: 85.383807%
+Fine: 79.705573%
+5 8 4
+Coarse: 85.383807%
+Fine: 79.390116%
+5 8 5
+Coarse: 85.383807%
+Fine: 79.390116%
+5 8 6
+Coarse: 85.383807%
+Fine: 79.390116%
+5 8 7
+Coarse: 85.383807%
+Fine: 79.495268%
+5 8 8
+Coarse: 85.383807%
+Fine: 79.495268%
+6 4 4
+Coarse: 86.750789%
+Fine: 82.334385%
+6 4 5
+Coarse: 86.855941%
+Fine: 82.334385%
+6 4 6
+Coarse: 86.855941%
+Fine: 82.334385%
+6 4 7 #Fine
+Coarse: 86.855941%
+Fine: 82.439537%
+6 4 8
+Coarse: 86.645636%
+Fine: 82.439537%
+6 5 4
+Coarse: 86.225026%
+Fine: 81.703470%
+6 5 5
+Coarse: 86.225026%
+Fine: 81.808623%
+6 5 6
+Coarse: 86.225026%
+Fine: 81.913775%
+6 5 7
+Coarse: 86.225026%
+Fine: 81.913775%
+6 5 8
+Coarse: 86.119874%
+Fine: 81.913775%
+6 6 4
+Coarse: 86.119874%
+Fine: 81.493165%
+6 6 5
+Coarse: 86.014721%
+Fine: 81.493165%
+6 6 6
+Coarse: 85.804416%
+Fine: 81.388013%
+6 6 7
+Coarse: 85.804416%
+Fine: 81.388013%
+6 6 8
+Coarse: 85.699264%
+Fine: 81.388013%
+6 7 4
+Coarse: 85.699264%
+Fine: 80.757098%
+6 7 5
+Coarse: 85.804416%
+Fine: 80.651945%
+6 7 6
+Coarse: 85.804416%
+Fine: 80.651945%
+6 7 7
+Coarse: 85.804416%
+Fine: 80.651945%
+6 7 8
+Coarse: 85.699264%
+Fine: 80.651945%
+6 8 4
+Coarse: 85.594111%
+Fine: 79.600421%
+6 8 5
+Coarse: 85.594111%
+Fine: 79.600421%
+6 8 6
+Coarse: 85.699264%
+Fine: 79.600421%
+6 8 7
+Coarse: 85.699264%
+Fine: 79.600421%
+6 8 8
+Coarse: 85.699264%
+Fine: 79.600421%
+7 4 4
+Coarse: 86.750789%
+Fine: 81.913775%
+7 4 5
+Coarse: 86.961094%
+Fine: 81.808623%
+7 4 6
+Coarse: 87.066246%
+Fine: 81.913775%
+7 4 7
+Coarse: 87.066246%
+Fine: 82.018927%
+7 4 8
+Coarse: 87.066246%
+Fine: 82.018927%
+7 5 4
+Coarse: 86.750789%
+Fine: 82.018927%
+7 5 5
+Coarse: 86.645636%
+Fine: 82.018927%
+7 5 6
+Coarse: 86.750789%
+Fine: 82.124080%
+7 5 7
+Coarse: 86.750789%
+Fine: 82.229232%
+7 5 8
+Coarse: 86.750789%
+Fine: 82.124080%
+7 6 4
+Coarse: 86.330179%
+Fine: 81.493165%
+7 6 5
+Coarse: 86.225026%
+Fine: 81.598318%
+7 6 6
+Coarse: 86.225026%
+Fine: 81.703470%
+7 6 7
+Coarse: 86.225026%
+Fine: 81.808623%
+7 6 8
+Coarse: 86.225026%
+Fine: 81.703470%
+7 7 4
+Coarse: 86.225026%
+Fine: 81.493165%
+7 7 5
+Coarse: 86.119874%
+Fine: 81.388013%
+7 7 6
+Coarse: 86.014721%
+Fine: 81.388013%
+7 7 7
+Coarse: 86.014721%
+Fine: 81.388013%
+7 7 8
+Coarse: 85.804416%
+Fine: 81.388013%
+7 8 4
+Coarse: 85.804416%
+Fine: 80.967403%
+7 8 5
+Coarse: 85.804416%
+Fine: 80.967403%
+7 8 6
+Coarse: 85.804416%
+Fine: 80.862250%
+7 8 7
+Coarse: 85.909569%
+Fine: 80.862250%
+7 8 8
+Coarse: 85.909569%
+Fine: 80.757098%
+8 4 4
+Coarse: 86.855941%
+Fine: 82.018927%
+8 4 5
+Coarse: 86.855941%
+Fine: 82.018927%
+8 4 6
+Coarse: 86.855941%
+Fine: 82.018927%
+8 4 7
+Coarse: 86.855941%
+Fine: 81.913775%
+8 4 8
+Coarse: 86.855941%
+Fine: 81.913775%
+8 5 4
+Coarse: 86.855941%
+Fine: 82.124080%
+8 5 5
+Coarse: 86.855941%
+Fine: 82.229232%
+8 5 6
+Coarse: 86.855941%
+Fine: 82.229232%
+8 5 7
+Coarse: 87.066246%
+Fine: 82.229232%
+8 5 8 #Coarse
+Coarse: 87.066246%
+Fine: 82.334385%
+8 6 4
+Coarse: 86.750789%
+Fine: 81.913775%
+8 6 5
+Coarse: 86.750789%
+Fine: 82.124080%
+8 6 6
+Coarse: 86.750789%
+Fine: 82.018927%
+8 6 7
+Coarse: 86.750789%
+Fine: 81.913775%
+8 6 8
+Coarse: 86.750789%
+Fine: 81.913775%
+8 7 4
+Coarse: 86.435331%
+Fine: 81.598318%
+8 7 5
+Coarse: 86.435331%
+Fine: 81.598318%
+8 7 6
+Coarse: 86.435331%
+Fine: 81.598318%
+8 7 7
+Coarse: 86.330179%
+Fine: 81.493165%
+8 7 8
+Coarse: 86.225026%
+Fine: 81.598318%
+8 8 4
+Coarse: 86.225026%
+Fine: 81.493165%
+8 8 5
+Coarse: 86.225026%
+Fine: 81.388013%
+8 8 6
+Coarse: 86.225026%
+Fine: 81.388013%
+8 8 7
+Coarse: 86.014721%
+Fine: 81.388013%
+8 8 8
+Coarse: 86.014721%
+Fine: 81.388013%
