@@ -103,7 +103,7 @@ def countNGrams(tokens, mode):
     countOccurrences(tokens, wordCount, W1)
     #countOccurrences(tokens, wordCount)
     countBigrams(tokens, wordCount, W2)
-    #countTrigrams(tokens, wordCount)
+    countTrigrams(tokens, wordCount, 0.22)
     #countDistantBigrams(tokens, wordCount)
     #countQuadrigrams(tokens, wordCount)
     #countPentagrams(tokens, wordCount)

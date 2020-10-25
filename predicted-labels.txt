@@ -799,7 +799,7 @@ HUM:ind
 HUM:ind
 DESC:desc
 ENTY:termeq
-HUM:ind
+ENTY:other
 NUM:count
 HUM:ind
 HUM:gr
