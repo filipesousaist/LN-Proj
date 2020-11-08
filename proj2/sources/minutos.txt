@@ -28,8 +28,8 @@
 9   15  eps         7
 10  15  eps         8
 11  15  eps         9
-12  16  minuto      1
-12  16  eps         1
+12  16  minuto      1       
+12  16  eps         1   1
 13  15  dois        2
 13  15  tres        3
 13  15  quatro      4
@@ -40,5 +40,5 @@
 13  15  nove        9
 14  15  um          1
 15  16  minutos     eps
-15  16  eps         eps
+15  16  eps         eps 1
 16
